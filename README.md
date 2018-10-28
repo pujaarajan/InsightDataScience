@@ -34,7 +34,7 @@ Requirements:
 
 While each of these steps are in their respective files noted below, the functions are called in this order in h1b_counting.py. i did this because it makes the code more modular, and easy to add to. Using this structure, if someone wanted to add the capability to read in additional data sets, they can add it to the data.py file. Or if they wanted to add more analyses, then they can add it to analysis.py. Here are the steps of my approach:
 
-**1. Set up logging and parse input arguments. See utilities.py.**
+**1. Set up logging and parse input arguments. See [utilities.py](https://github.com/pujaarajan/InsightDataScience/blob/master/src/analysis.py).**
 
 First, I set up useful utilities, including logging and an argument parser, for analyzing H1B data. It is my personal preference to log every step. You see the logging printed to the console and printed to the H1B_data_analysis.log in the main project directory.
 
