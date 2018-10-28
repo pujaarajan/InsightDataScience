@@ -62,17 +62,17 @@ def parse_arguments():
 
         log.info('Reading input arguments')
         log.info('Input file:{input_arguments.input_file}')
-        log.info(f'Output file: {input_arguments.output_file}')
-        log.info(f'Top N rows: {input_arguments.top_n}')
-        log.info(f'Input column: {input_arguments.input_column}')
-        log.info(f'Status column: {input_arguments.status_column}')
-        log.info(f'Output column: {input_arguments.output_column}')
-        log.info(f'Finished reading input arguments')
+        log.info('Output file: {input_arguments.output_file}')
+        log.info('Top N rows: {input_arguments.top_n}')
+        log.info('Input column: {input_arguments.input_column}')
+        log.info('Status column: {input_arguments.status_column}')
+        log.info('Output column: {input_arguments.output_column}')
+        log.info('Finished reading input arguments')
 
         return input_arguments
 
     except Exception as error:
-        log.error(f'Error when parsing input arguments!\n{error}\nQuitting now.')
+        log.error('Error when parsing input arguments!\n{error}\nQuitting now.')
         parser.error(str(error))
-        log.error(f'Quitting')
+        log.error('Quitting')
         quit()
