@@ -19,7 +19,7 @@ def read_h1b_data(args):
     sorted by decreasing frequency and then alphabetically:
     """
     log = logging.getLogger('H1B_data_analysis.data.read_h1b_data')
-    log.info(f'Beginning to read H1B data from {args.input_file}')
+    log.info('Beginning to read H1B data from {args.input_file}')
 
     try:
         certified_count = Counter()
@@ -40,8 +40,8 @@ def read_h1b_data(args):
         return sorted_counts
     except Exception as error:
         log.error(
-            f'Error when reading H1B data and counting the number of certified applications for the input column group!'
-            f'\n{error}\nQuitting now.')
+            'Error when reading H1B data and counting the number of certified applications for the input column group!'
+            '\n{error}\nQuitting now.')
         quit()
 
 
@@ -56,17 +56,17 @@ def write_h1b_data(args, top_certified, total_certified):
 
     try:
         log = logging.getLogger('H1B_data_analysis.data.write_h1b_data')
-        log.info(f'Beginning to write H1B data output file to {args.output_file}')
+        log.info('Beginning to write H1B data output file to {args.output_file}')
         with open(args.output_file, 'w', newline='') as output_file:
-            log.info("Opened H1B data output file")
+            log.info('Opened H1B data output file')
             fieldnames = [args.output_column, 'NUMBER_CERTIFIED_APPLICATIONS', 'PERCENTAGE']
             writer = csv.DictWriter(output_file, fieldnames=fieldnames, delimiter=args.delimiter, skipinitialspace=True)
             writer.writeheader()
             for key, value in top_certified:
                 writer.writerow({args.output_column: key, 'NUMBER_CERTIFIED_APPLICATIONS': value,
                                  'PERCENTAGE': '{:.1%}'.format(value / total_certified)})
-        log.info(f'Finished writing H1B data output file to {args.output_file}')
+        log.info('Finished writing H1B data output file to {args.output_file}')
     except Exception as error:
         log.error(
-            f'Error when writing the H1B data analysis to output files!\n{error}\nQuitting now.')
+            'Error when writing the H1B data analysis to output files!\n{error}\nQuitting now.')
         quit()
