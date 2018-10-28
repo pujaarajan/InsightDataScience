@@ -27,11 +27,5 @@ if __name__ == '__main__':
     data.write_h1b_data(input_args, top_certified, total_certified)
 
     log.info('Finished running H1B data analysis code')
-    log.info(f'See log file here: {os.getcwd()}/H1B_data_analysis.log')
+    #log.info(f'See log file here: {os.getcwd()}/H1B_data_analysis.log')
     log.info("Exiting")
-
-# make everything lowercase
-# strip out special characters
-# add logger?
-
-
