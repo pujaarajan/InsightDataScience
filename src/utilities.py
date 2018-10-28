@@ -61,7 +61,7 @@ def parse_arguments():
         input_arguments = parser.parse_args()
 
         log.info('Reading input arguments')
-        log.info(f'Input file:{input_arguments.input_file}')
+        log.info('Input file:{input_arguments.input_file}')
         log.info(f'Output file: {input_arguments.output_file}')
         log.info(f'Top N rows: {input_arguments.top_n}')
         log.info(f'Input column: {input_arguments.input_column}')
