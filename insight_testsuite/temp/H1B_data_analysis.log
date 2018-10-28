@@ -1,0 +1,48 @@
+2018-10-27 19:23:48,710 - H1B_data_analysis - INFO - Finished creating logger
+2018-10-27 19:23:48,710 - H1B_data_analysis.main - INFO - Beginning to run H1B data analysis code
+2018-10-27 19:23:48,710 - H1B_data_analysis.utilities.parse_arguments - INFO - Beginning to parse input arguments
+2018-10-27 19:23:48,712 - H1B_data_analysis.utilities.parse_arguments - INFO - Reading input arguments
+2018-10-27 19:23:48,712 - H1B_data_analysis.utilities.parse_arguments - INFO - Input file:./input/h1b_input.csv
+2018-10-27 19:23:48,712 - H1B_data_analysis.utilities.parse_arguments - INFO - Output file: ./output/top_10_occupations.txt
+2018-10-27 19:23:48,712 - H1B_data_analysis.utilities.parse_arguments - INFO - Top N rows: 10
+2018-10-27 19:23:48,713 - H1B_data_analysis.utilities.parse_arguments - INFO - Input column: SOC_NAME
+2018-10-27 19:23:48,713 - H1B_data_analysis.utilities.parse_arguments - INFO - Status column: CASE_STATUS
+2018-10-27 19:23:48,713 - H1B_data_analysis.utilities.parse_arguments - INFO - Output column: TOP_OCCUPATIONS
+2018-10-27 19:23:48,713 - H1B_data_analysis.utilities.parse_arguments - INFO - Finished reading input arguments
+2018-10-27 19:23:48,713 - H1B_data_analysis.data.read_h1b_data - INFO - Beginning to read H1B data from ./input/h1b_input.csv
+2018-10-27 19:23:48,713 - H1B_data_analysis.data.read_h1b_data - INFO - Opened H1B data input file
+2018-10-27 19:23:48,713 - H1B_data_analysis.data.read_h1b_data - INFO - Finished reading in H1B data input file
+2018-10-27 19:23:48,713 - H1B_data_analysis.data.read_h1b_data - INFO - Sorting the list firstÒ by decreasing frequency and then alphabetically
+2018-10-27 19:23:48,714 - H1B_data_analysis.data.read_h1b_data - INFO - Finished counting certified H1B applications
+2018-10-27 19:23:48,714 - H1B_data_analysis.analysis.count_top_certified - INFO - Counting the top N number of certified H1B applications for the input column group
+2018-10-27 19:23:48,714 - H1B_data_analysis.analysis.count_total_certified - INFO - Counting the total number of certified H1B applications in the H1B data input file
+2018-10-27 19:23:48,714 - H1B_data_analysis.data.write_h1b_data - INFO - Beginning to write H1B data output file to ./output/top_10_occupations.txt
+2018-10-27 19:23:48,714 - H1B_data_analysis.data.write_h1b_data - INFO - Opened H1B data output file
+2018-10-27 19:23:48,714 - H1B_data_analysis.data.write_h1b_data - INFO - Finished writing H1B data output file to ./output/top_10_occupations.txt
+2018-10-27 19:23:48,715 - H1B_data_analysis.main - INFO - Finished running H1B data analysis code
+2018-10-27 19:23:48,715 - H1B_data_analysis.main - INFO - See log file here: /Users/pujaarajan/PycharmProjects/h1b_statistics/insight_testsuite/temp/H1B_data_analysis.log
+2018-10-27 19:23:48,715 - H1B_data_analysis.main - INFO - Exiting
+2018-10-27 19:23:48,785 - H1B_data_analysis - INFO - Finished creating logger
+2018-10-27 19:23:48,785 - H1B_data_analysis.main - INFO - Beginning to run H1B data analysis code
+2018-10-27 19:23:48,786 - H1B_data_analysis.utilities.parse_arguments - INFO - Beginning to parse input arguments
+2018-10-27 19:23:48,787 - H1B_data_analysis.utilities.parse_arguments - INFO - Reading input arguments
+2018-10-27 19:23:48,787 - H1B_data_analysis.utilities.parse_arguments - INFO - Input file:./input/h1b_input.csv
+2018-10-27 19:23:48,787 - H1B_data_analysis.utilities.parse_arguments - INFO - Output file: ./output/top_10_states.txt
+2018-10-27 19:23:48,787 - H1B_data_analysis.utilities.parse_arguments - INFO - Top N rows: 10
+2018-10-27 19:23:48,787 - H1B_data_analysis.utilities.parse_arguments - INFO - Input column: WORKSITE_STATE
+2018-10-27 19:23:48,788 - H1B_data_analysis.utilities.parse_arguments - INFO - Status column: CASE_STATUS
+2018-10-27 19:23:48,788 - H1B_data_analysis.utilities.parse_arguments - INFO - Output column: TOP_STATES
+2018-10-27 19:23:48,788 - H1B_data_analysis.utilities.parse_arguments - INFO - Finished reading input arguments
+2018-10-27 19:23:48,788 - H1B_data_analysis.data.read_h1b_data - INFO - Beginning to read H1B data from ./input/h1b_input.csv
+2018-10-27 19:23:48,788 - H1B_data_analysis.data.read_h1b_data - INFO - Opened H1B data input file
+2018-10-27 19:23:48,788 - H1B_data_analysis.data.read_h1b_data - INFO - Finished reading in H1B data input file
+2018-10-27 19:23:48,788 - H1B_data_analysis.data.read_h1b_data - INFO - Sorting the list firstÒ by decreasing frequency and then alphabetically
+2018-10-27 19:23:48,788 - H1B_data_analysis.data.read_h1b_data - INFO - Finished counting certified H1B applications
+2018-10-27 19:23:48,789 - H1B_data_analysis.analysis.count_top_certified - INFO - Counting the top N number of certified H1B applications for the input column group
+2018-10-27 19:23:48,789 - H1B_data_analysis.analysis.count_total_certified - INFO - Counting the total number of certified H1B applications in the H1B data input file
+2018-10-27 19:23:48,789 - H1B_data_analysis.data.write_h1b_data - INFO - Beginning to write H1B data output file to ./output/top_10_states.txt
+2018-10-27 19:23:48,789 - H1B_data_analysis.data.write_h1b_data - INFO - Opened H1B data output file
+2018-10-27 19:23:48,789 - H1B_data_analysis.data.write_h1b_data - INFO - Finished writing H1B data output file to ./output/top_10_states.txt
+2018-10-27 19:23:48,789 - H1B_data_analysis.main - INFO - Finished running H1B data analysis code
+2018-10-27 19:23:48,790 - H1B_data_analysis.main - INFO - See log file here: /Users/pujaarajan/PycharmProjects/h1b_statistics/insight_testsuite/temp/H1B_data_analysis.log
+2018-10-27 19:23:48,790 - H1B_data_analysis.main - INFO - Exiting

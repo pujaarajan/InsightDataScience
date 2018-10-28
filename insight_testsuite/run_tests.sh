@@ -62,7 +62,9 @@ function compare_outputs {
 
   DIFF_RESULT1=$(diff -bB ${PROJECT_ANSWER_PATH1} ${TEST_ANSWER_PATH1} | wc -l)
   if [ "${DIFF_RESULT1}" -eq "0" ] && [ -f ${PROJECT_ANSWER_PATH1} ]; then
-    echo -e "[${color_green}PASS${color_norm}]: ${test_folder} ${OUTPUT_FILENAME}"
+# I found a bug on the next line. Originally, OUTPUT_FILENAME1 was incorrectly OUTPUT_FILENAME.
+# I created a Github issue and a Github pull request.
+    echo -e "[${color_green}PASS${color_norm}]: ${test_folder} ${OUTPUT_FILENAME1}"
     NUM_OUTPUT_FILES_PASSED=$(($NUM_OUTPUT_FILES_PASSED+1))
   else
     echo -e "[${color_red}FAIL${color_norm}]: ${test_folder}"
@@ -109,5 +111,4 @@ function run_all_tests {
   echo "[$(date)] ${PASS_CNT} of ${NUM_TESTS} tests passed" >> ${GRADER_ROOT}/results.txt
 }
 
-check_project_struct
 run_all_tests
