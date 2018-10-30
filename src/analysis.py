@@ -30,8 +30,7 @@ def count_top_certified(args, certified_count):
         return Counter(certified_count).most_common(args.top_n)
     except Exception as error:
         log.error(
-            'Error when extracting the top N number of certified H1B applications for the input column group!\n{error}'
-            '\nQuitting now.')
+            'Error when extracting the top N number of certified H1B applications for the input column group!\n{}\nQuitting now.'.format(error))
         quit()
 
 
@@ -48,6 +47,5 @@ def count_total_certified(certified_count):
         return sum(certified_count.values())
     except Exception as error:
         log.error(
-            'Error when counting the total number of certified H1B applications in the H1B data input file!\n{error}\n'
-            'Quitting now.')
+            'Error when counting the total number of certified H1B applications in the H1B data input file!\n{}\nQuitting now.'.format(error)
         quit()
