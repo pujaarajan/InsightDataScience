@@ -72,7 +72,7 @@ def parse_arguments():
         return input_arguments
 
     except Exception as error:
-        log.error('Error when parsing input arguments!\n{error}\nQuitting now.')
+        log.exception('Error when parsing input arguments!\nQuitting now.')
         parser.error(str(error))
         log.error('Quitting')
         quit()
