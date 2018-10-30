@@ -126,10 +126,10 @@ Depending on the input, there may be fewer than 10 lines in each file. This is t
 
 I created 4 tests to test a variety of cases described below. I found a bug in run_tests.sh. See run_tests.sh lines 65-67.
 
-test_1 - Given
-test_2 - Tests if # output rows < 10 when # input data rows < 10
-test_3 - Tests what happens if the input file only has a header row with no data
-test_4 - Tests what happens if input file is empty
+1. test_1 - Given
+2. your_own_test_1 - Tests if # output rows < 10 when # input data rows < 10
+3. your_own_test_2 - Tests what happens if the input file only has a header row with no data
+4. your_own_test_3 - Tests what happens if input file is empty
 
 I also manually tested the code using the H1B_FY_2014.csv, H1B_FY_2015.csv, and H1B_FY_2016.csv from the Google Drive. See Run section for commands.
 
