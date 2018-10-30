@@ -39,9 +39,8 @@ def read_h1b_data(args):
         log.info('Finished counting certified H1B applications')
         return sorted_counts
     except Exception as error:
-        log.error(
-            'Error when reading H1B data and counting the number of certified applications for the input column group!'
-            '\n{error}\nQuitting now.')
+        log.exception(
+            'Error when reading H1B data and counting the number of certified applications for the input column group!\nQuitting now.')
         quit()
 
 
@@ -67,6 +66,6 @@ def write_h1b_data(args, top_certified, total_certified):
                                  'PERCENTAGE': '{:.1%}'.format(value / total_certified)})
         log.info('Finished writing H1B data output file to {args.output_file}')
     except Exception as error:
-        log.error(
-            'Error when writing the H1B data analysis to output files!\n{error}\nQuitting now.')
+        log.exception(
+            'Error when writing the H1B data analysis to output files!\nQuitting now.')
         quit()
