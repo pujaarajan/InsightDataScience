@@ -19,7 +19,7 @@ __email__ = "pujaa.rajan@gmail.com"
 def count_top_certified(args, certified_count):
     """
     Extract the top N number of certified H1B applications for the input column group
-    @param certified_count:Ò
+    @param certified_count:
     @param arguments:
     @return the top N number of certified H1B applications for the input column group sorted by decreasing frequency and
     then alphabetically:
@@ -29,8 +29,7 @@ def count_top_certified(args, certified_count):
     try:
         return Counter(certified_count).most_common(args.top_n)
     except Exception as error:
-        log.error(
-            'Error when extracting the top N number of certified H1B applications for the input column group!\n{}\nQuitting now.'.format(error))
+        log.exception('Error when extracting the top N number of certified H1B applications for the input column group!\nQuitting now.')
         quit()
 
 
@@ -46,6 +45,5 @@ def count_total_certified(certified_count):
     try:
         return sum(certified_count.values())
     except Exception as error:
-        log.error(
-            'Error when counting the total number of certified H1B applications in the H1B data input file!\n{}\nQuitting now.'.format(error)
+        log.exception('Error when counting the total number of certified H1B applications in the H1B data input file!\nQuitting now.')
         quit()
