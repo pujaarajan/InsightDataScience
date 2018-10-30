@@ -76,6 +76,12 @@ Write the H1B data analysis to output files.
 3. Run the help command to understand the input arguments: `python3 ./src/h1b_counting.py --help`
 4. Run this command after replacing variables. See below for example commands: `python3 ./src/h1b_counting.py --input_file <var> --output_file <var> --top_n <var> --input_column <var> --status_column <var> --output_column <var>`
 
+### Example Run Command using the data in the input folder
+```shell
+python3 ./src/h1b_counting.py --input_file ./input/h1b_input.csv --output_file ./output/top_10_states.txt --input_column WORKSITE_STATE --status_column CASE_STATUS --output_column TOP_STATES
+./src/h1b_counting.py --input_file ./input/h1b_input.csv --output_file ./output/top_10_occupations.txt --input_column SOC_NAME --status_column CASE_STATUS --output_column TOP_OCCUPATIONS
+```
+
 ### Run Commands for 2014 Input Data
 ```shell
 python3 ./src/h1b_counting.py --input_file ./input/H1B_FY_2014.csv --output_file ./output/top_10_occupations.txt --input_column LCA_CASE_SOC_NAME --status_column STATUS --output_column TOP_OCCUPATIONS
@@ -138,7 +144,7 @@ I also manually tested the code using the H1B_FY_2014.csv, H1B_FY_2015.csv, and 
 If I had more time, then I would work on the following:
 
 1. Add a debug mode. I currently log everything on all runs which makes the console output lengthy, and sometimes hard to follow. 
-2. I would log the number of lines in each file that's read in to help debug.
+2. I would log the number of lines in each file that's read in and sample outputs in the console to help debug.
 3. I would create multiple run options so that you can run multiple analysis (e.g. occupations, states) at the same time.
 
 ## Questions
