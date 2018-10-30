@@ -21,7 +21,7 @@ def logger():
     fh = logging.FileHandler('H1B_data_analysis.log')
     fh.setLevel(logging.DEBUG)
     # create console handler with the same log level
-    ch = logging.StreamHandler()
+    ch = logging.StreamHandler(sys.stdout)
     ch.setLevel(logging.DEBUG)
     # create formatter and add it to the handlers
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
