@@ -79,7 +79,7 @@ Write the H1B data analysis to output files.
 ### Example Run Command using the data in the input folder
 ```shell
 python3 ./src/h1b_counting.py --input_file ./input/h1b_input.csv --output_file ./output/top_10_states.txt --input_column WORKSITE_STATE --status_column CASE_STATUS --output_column TOP_STATES
-./src/h1b_counting.py --input_file ./input/h1b_input.csv --output_file ./output/top_10_occupations.txt --input_column SOC_NAME --status_column CASE_STATUS --output_column TOP_OCCUPATIONS
+python3 ./src/h1b_counting.py --input_file ./input/h1b_input.csv --output_file ./output/top_10_occupations.txt --input_column SOC_NAME --status_column CASE_STATUS --output_column TOP_OCCUPATIONS
 ```
 
 ### Run Commands for 2014 Input Data
@@ -133,9 +133,9 @@ Depending on the input, there may be fewer than 10 lines in each file. This is t
 I created 4 tests to test a variety of cases described below. I found a bug in run_tests.sh. See run_tests.sh lines 65-67.
 
 1. test_1 - Given
-2. your_own_test_1 - Tests if # output rows < 10 when # input data rows < 10
-3. your_own_test_2 - Tests what happens if the input file only has a header row with no data
-4. your_own_test_3 - Tests what happens if input file is empty
+2. your-own-test-1 - Tests if # output rows < 10 when # input data rows < 10
+3. your-own-test-2 - Tests what happens if the input file only has a header row with no data
+4. your-own-test-3 - Tests what happens if input file is empty
 
 I also manually tested the code using the H1B_FY_2014.csv, H1B_FY_2015.csv, and H1B_FY_2016.csv from the Google Drive. See Run section for commands.
 
